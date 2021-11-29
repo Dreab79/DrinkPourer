@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@android:color/background_light"
+        app:title="Bluetooth Connection"
+        app:titleTextColor="@android:color/background_light"
+        android:layout_weight="6"/>
+
+
+
+    <Button
+        android:id="@+id/buttonConnect"
+       android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Connect"
+        android:background="?attr/colorPrimary"
+        android:layout_weight="3"
+ />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/box">
+            <TextView
+                android:id="@+id/waterText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Water Level:" />
+            <TextView
+                android:id="@+id/waterValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:background="@drawable/box">
+            <TextView
+                android:id="@+id/amountPouredText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Poured:"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/amountPouredValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0 oz"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:background="@drawable/box">
+            <TextView
+                android:id="@+id/tempText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Temp:"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/box">
+        <TextView
+            android:id="@+id/statusText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Station 1 Status:"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/statusValue1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="READY"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/box">
+        <TextView
+            android:id="@+id/statusText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Station 2 Status:"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/statusValue2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="READY"
+            android:layout_weight="1"/>
+
+    </LinearLayout>    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/box">
+    <TextView
+        android:id="@+id/statusText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Station 3 Status:"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/statusValue3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="READY"
+        android:layout_weight="1"/>
+
+</LinearLayout>    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/box">
+    <TextView
+        android:id="@+id/statusText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Station 4 Status:"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/statusValue4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="READY"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/ozToPourText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pour Amount" />
+        <Spinner
+            android:id="@+id/pourAmountSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:weightSum="1">
+
+        <Switch
+            android:id="@+id/modeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Automatic"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/stationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"/>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonToggle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pour"
+        android:textSize="24sp"
+
+        />
+
+
+</LinearLayout>

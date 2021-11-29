@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="oztopour">
+        <item>2 oz</item>
+        <item>6 oz</item>
+        <item>8 oz</item>
+        <item>10 oz</item>
+        <item>12 oz</item>
+        <item>16 oz</item>
+    </string-array>
+</resources>
